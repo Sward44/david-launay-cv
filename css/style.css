@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+a:hover {
+  font-size: 1.64rem;
+  opacity: 0.75;
+}
+
+img {
+  max-width: 60%;
+}
+
+.title-small {
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
+}
+
+.px-1 {
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 1.2rem;
+}
+
+.mx-1 {
+  margin-right: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  grid: "picture header" auto "aside main" 1fr/305px auto;
+}
+
+header {
+  grid-area: header;
+  background: linear-gradient(to left, var(--primary), var(--light));
+  box-shadow: 0 3px 7px 0px rgba(23, 29, 37, 0.24);
+  padding: 1rem 5rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: 5rem;
+  line-height: 8rem;
+  font-weight: 300;
+  letter-spacing: 2rem;
+}
+header p {
+  letter-spacing: 0.4rem;
+}
+
+.picture {
+  display: flex;
+  grid-area: picture;
+  padding: 1rem;
+  background: linear-gradient(to left, var(--light), var(--background));
+  box-shadow: 0px 3px 0px 0px rgba(23, 29, 37, 0.24);
+  justify-content: center;
+}
+.picture img {
+  margin: auto;
+  border: 4.5px solid var(--background);
+  border-radius: 1.5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+aside {
+  grid-area: aside;
+  background: var(--background);
+  box-shadow: 1.5px 0px 10px 0px rgba(23, 29, 37, 0.18);
+  padding: 3rem 3rem;
+}
+aside .block {
+  padding-bottom: 3rem;
+}
+aside h2 {
+  margin-bottom: 0.5rem;
+}
+aside h3 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+aside p {
+  margin: 0.3rem 0 2rem 0;
+  font-style: italic;
+}
+aside .loca-address {
+  display: flex;
+}
+aside .localisation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+aside .localisation img {
+  max-width: 2.6rem;
+}
+aside .bar-skill {
+  margin: 0.5rem 0 2rem 0;
+  height: 16px;
+  border-radius: 3px;
+  background: var(--hint);
+  position: relative;
+}
+aside .bar-skill .skill-progress {
+  position: absolute;
+  height: 16px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+}
+aside .bar-skill .skill-dot {
+  position: absolute;
+  height: 20px;
+  border-radius: 50%;
+  width: 2px;
+  background: var(--text);
+  left: calc(85% - 1px);
+  top: -2px;
+}
+aside .bar-skill .html {
+  width: 85%;
+}
+aside .bar-skill .html-dot {
+  left: calc(85% - 1px);
+}
+aside .bar-skill .php-js {
+  width: 40%;
+}
+aside .bar-skill .php-js-dot {
+  left: calc(40% - 1px);
+}
+aside .bar-skill .vba {
+  width: 75%;
+}
+aside .bar-skill .vba-dot {
+  left: calc(75% - 1px);
+}
+aside .bar-skill .office {
+  width: 95%;
+}
+aside .bar-skill .office-dot {
+  left: calc(95% - 1px);
+}
+aside .bar-skill .erp {
+  width: 75%;
+}
+aside .bar-skill .erp-dot {
+  left: calc(75% - 1px);
+}
+aside .bar-skill .cao {
+  width: 65%;
+}
+aside .bar-skill .cao-dot {
+  left: calc(65% - 1px);
+}
+
+main {
+  grid-area: main;
+  padding: 3rem 5rem;
+}
+main .block {
+  padding-bottom: 3rem;
+}
+main h2 {
+  margin-bottom: 0.5rem;
+}
+main h3 {
+  margin: 0;
+}
+main p {
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
+  margin-top: 0;
+  text-align: justify;
+}
+main .experience {
+  display: flex;
+  margin-top: 3rem;
+}
+main .experience .timeline {
+  min-width: 120px;
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--hint);
+  padding-right: 2rem;
+  border-right: 1px solid var(--border);
+}
+main .experience .text-hint {
+  margin-bottom: 2rem;
+}
+main .experience .content {
+  margin-top: 2rem;
+  padding: 0 0 0 2rem;
+}
+main .experience .content ul {
+  list-style: disc;
+  padding-left: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

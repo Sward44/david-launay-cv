@@ -1,0 +1,46 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text);
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0.5rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    margin-bottom: 2rem;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+a:hover {
+    font-size: 1.64rem;
+    // padding: 0.285rem 0 1.985rem 0;
+    opacity: 0.75;
+}
+
+img {
+    max-width: 60%;
+}

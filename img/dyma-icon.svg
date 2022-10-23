@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <defs>
+    <style>
+      .b {
+        fill: #68b8f7;
+      }
+
+      .c {
+        fill: #51adf6;
+      }
+
+      .d {
+        fill: #1c8ee9;
+      }
+    </style>
+  </defs>
+  <polygon class="b" points="808.75 250 1575.62 1119.08 808.5 1056.44 808.75 250" />
+  <polygon class="c" points="463.76 723.01 1576.18 1119 875.75 1425.8 463.76 723.01" />
+  <polygon class="d" points="423.67 1389.54 1576.18 1119.11 1175.12 1750 423.67 1389.54" />
+</svg>
