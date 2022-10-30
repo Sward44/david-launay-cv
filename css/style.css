@@ -426,12 +426,21 @@ main .experience .timeline {
 main .experience .text-hint {
   grid-area: text-hint;
   padding: 0 0 1.5rem 2rem;
+  display: flex;
+  flex-direction: row nowrap;
 }
 @media (max-width: 480px) {
   main .experience .text-hint {
     padding: 0.4rem 0 0 0.7rem;
     font-size: 90%;
   }
+}
+main .experience p {
+  margin: 0;
+}
+main .experience .imag {
+  height: 2.4rem;
+  padding-right: 0.5rem;
 }
 main .experience .titre {
   grid-area: h3;
