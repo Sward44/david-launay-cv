@@ -390,6 +390,11 @@ main p {
     font-size: 88%;
   }
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  main ul {
+    font-size: 88%;
+  }
+}
 main .experience {
   display: grid;
   grid: "timeline h3" auto "timeline text-hint" auto "timeline p" auto "timeline ul" auto/120px auto;
@@ -471,6 +476,17 @@ main .experience ul {
   main .experience ul {
     font-size: 95%;
   }
+}
+main .experience .resultat {
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 480px) {
+  main .experience .resultat {
+    padding-bottom: 0rem;
+  }
+}
+main .experience .resultat span {
+  text-decoration: underline;
 }
 main .separator {
   display: none;
