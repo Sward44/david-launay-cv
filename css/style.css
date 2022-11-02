@@ -284,6 +284,23 @@ aside .localisation {
 aside .localisation img {
   max-width: 2.6rem;
 }
+aside .langue {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+aside .langue img {
+  max-width: 3.6rem;
+}
+aside .langue .text-primary {
+  color: var(--shining);
+}
+aside .langue .fa-star {
+  font-size: 2.1rem;
+}
 aside .bar-skill {
   margin: 0.5rem 0 2rem 0;
   height: 16px;
