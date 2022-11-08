@@ -228,6 +228,9 @@ aside .informatique {
 aside .langues {
   grid-area: lang;
 }
+aside .lang {
+  grid-area: hobb;
+}
 aside .sticky {
   position: sticky;
   top: 25px;
@@ -236,7 +239,7 @@ aside .sticky {
 @media (min-width: 481px) and (max-width: 767px) {
   aside .sticky {
     display: grid;
-    grid: "cont educ" auto "info lang" auto/1fr 1fr;
+    grid: "cont educ" auto "info lang" auto "info hobb" auto/1fr 1fr;
     position: relative;
   }
 }
@@ -293,7 +296,7 @@ aside .langue {
   padding-bottom: 2rem;
 }
 aside .langue img {
-  max-width: 3.6rem;
+  max-width: 4rem;
 }
 aside .langue .text-primary {
   color: var(--shining);
